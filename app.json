@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "WatchLink Pro",
+    "slug": "watchlink-pro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#000814"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#000814"
+      },
+      "package": "com.watchlinkpro.app",
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "react-native-ble-plx",
+        {
+          "isBackgroundEnabled": true,
+          "modes": ["peripheral", "central"],
+          "bluetoothAlwaysPermission": "Allow WatchLink Pro to use Bluetooth"
+        }
+      ]
+    ]
+  }
+}
