@@ -1,14 +1,10 @@
 {
   "cli": {
-    "version": ">= 5.9.1"
+    "version": ">= 5.9.1",
+    "appVersionSource": "local"
   },
   "build": {
     "preview": {
-      "android": {
-        "buildType": "apk"
-      }
-    },
-    "production": {
       "android": {
         "buildType": "apk"
       }
